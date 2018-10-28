@@ -1,0 +1,27 @@
+//@extend-elements
+//original selectors
+//html, body
+%extend_1 {
+    background: $woodsmoke;
+    color: $loblolly;
+    font-family: $font_0, $font_1, $font_2;
+    font-size: .88em;
+    font-weight: 400;
+    height: 100%;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 1px 1px 0 $black_30;
+}
+
+//original selectors
+//#bingoPage #bingo tr:first-child td, #bingoPage #bingo tr:last-child td
+%extend_2 {
+    background: $blue_charcoal;
+    border: 1px $madison solid;
+    color: $royal_blue;
+    font-size: 75%;
+    font-weight: 700;
+    height: 30px;
+}

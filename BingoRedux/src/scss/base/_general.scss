@@ -1,0 +1,332 @@
+@import '../mixins/extensions';
+
+html {
+    @extend %extend_1;
+}
+
+body {
+    @extend %extend_1;
+}
+
+header {
+    border-bottom: 1px $cape_cod dotted;
+    box-shadow: 1px 1px 2px $black_60;
+    padding-top: 8px;
+}
+
+footer {
+    border-top: 1px $cape_cod dotted;
+    box-shadow: 1px 1px 2px $black_60;
+    clear: both;
+    color: $gray;
+    font-size: 85%;
+    height: 28px;
+    line-height: 85%;
+    margin-top: -29px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    .left {
+        margin-left: 8px;
+    }
+
+    .right {
+        margin-right: 8px;
+    }
+
+    .container {
+        padding: 8px 0;
+    }
+}
+
+strong {
+    color: $golden_sand;
+    font-weight: 700;
+}
+
+h1 {
+    color: $di_serria;
+    font-family: $font_3, $font_4, $font_5;
+    margin: 8px 0 0;
+    overflow: hidden;
+    padding: 8px 0;
+    word-wrap: break-word;
+
+    img {
+        margin: 0 8px;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    color: $golden_sand;
+    margin: 0 0 8px;
+}
+
+h3 {
+    color: $golden_sand;
+    margin: 4px 0;
+}
+
+h4 {
+    color: $golden_sand;
+    margin: 8px 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0 0 8px;
+}
+
+ul {
+    margin-left: 0;
+    margin-top: 2px;
+    padding-left: 1em;
+    text-indent: -1em;
+
+    li {
+        list-style-position: inside;
+        list-style-type: square;
+        padding-bottom: 10px;
+    }
+}
+
+.noselect {}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+    width: 100%;
+}
+
+td {
+    border: 0;
+    padding: 0;
+}
+
+th {
+    background-color: $milano_red;
+    background-image: '', linear-gradient(tobottom, $milano_red, $tamarillo);
+    color: $golden_sand;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px $woodsmoke;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    padding-bottom: 28px;
+}
+
+#logo {
+    display: block;
+    height: 50px;
+    margin-bottom: 13px;
+    overflow: hidden;
+    width: 350px;
+
+    span {
+        display: none;
+    }
+}
+
+#bingoPage {
+    #results {
+        float: left;
+        margin-right: 16px;
+        text-align: right;
+        width: 594px;
+    }
+
+    .newcard {
+        background-color: $cape_cod;
+        background-image: '', linear-gradient(tobottom, $cape_cod, $mine_shaft);
+        border-color: $gravel $black $black $gravel;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px 0 1px 1px;
+        box-shadow: 1px 1px 2px $black_60;
+        color: $loblolly;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-weight: 700;
+        margin: 0 16px 0 0;
+        padding: 4px 0;
+        text-align: center;
+        user-select: none;
+        width: 105px;
+
+        &:hover {
+            background-color: $royal_blue;
+            background-image: '', linear-gradient(tobottom, $royal_blue, $mariner);
+            border-color: $havelock_blue $deep_sapphire $deep_sapphire $royal_blue;
+            border-style: solid;
+            border-width: 1px 0 1px 1px;
+            color: $white;
+        }
+
+        &:active {
+            background-color: $tory_blue;
+            background-image: '', linear-gradient(tobottom, $tory_blue, $torea_bay);
+            border-color: $denim $tangaroa $tangaroa $tory_blue;
+            border-style: solid;
+            border-width: 1px 0 1px 1px;
+            box-shadow: 0 0 0 $black_60;
+            color: $white;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    #bingo {
+        margin-top: 16px;
+
+        .rowcol {
+            background: $blue_charcoal;
+            border: 1px $madison solid;
+            color: $royal_blue;
+            font-size: 75%;
+            font-weight: 700;
+
+            &:hover {
+                background: $tory_blue;
+                color: $white;
+            }
+        }
+
+        tr {
+            td {
+                background: $black;
+                border: 1px $cape_cod solid;
+                box-shadow: inset 0 0 50px $black_60;
+                cursor: pointer;
+                height: 90px;
+                padding: 0 5px;
+                text-align: center;
+                width: 95px;
+                max-width: 95px;
+
+                &:first-child {
+                    background: $blue_charcoal;
+                    border: 1px $madison solid;
+                    color: $royal_blue;
+                    font-size: 75%;
+                    font-weight: 700;
+                    width: 35px;
+
+                    &:hover {
+                        background: $tory_blue;
+                        color: $white;
+                    }
+                }
+
+                &:hover {
+                    background: $midnight;
+                    color: $white;
+                }
+
+                &.hover {
+                    background: $midnight;
+                    color: $white;
+                }
+
+                &.greensquare {
+                    background: $camarone;
+
+                    &:hover {
+                        background: $fun_green;
+                    }
+
+                    &.hover {
+                        background: $fun_green;
+                    }
+                }
+
+                &.redsquare {
+                    background: $maroon_oak;
+
+                    &:hover {
+                        background: $black_rose;
+                    }
+
+                    &.hover {
+                        background: $black_rose;
+                    }
+                }
+            }
+
+            &:first-child td {
+                @extend %extend_2;
+
+                &:hover {
+                    background: $tory_blue;
+                    color: $white;
+                }
+            }
+
+            &:last-child td {
+                @extend %extend_2;
+
+                &:hover {
+                    background: $tory_blue;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    #about_bingo {
+        float: right;
+        width: 365px;
+    }
+}
+
+#ajaxstage {
+    margin: 20px auto;
+}
+
+#ajaxspin {
+    border-color: $log_cabin $potters_clay $oslo_gray $sundance;
+    border-radius: 40px;
+    border-style: dotted;
+    border-width: 2px;
+    height: 30px;
+    margin: 0 auto;
+    width: 30px;
+}
+
+#ajaxloading {
+    color: $gray;
+    font-size: 85%;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 8px 0 16px 16px;
+    width: 976px;
+}
+

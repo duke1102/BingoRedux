@@ -1,0 +1,53 @@
+.sans {
+    font-family: $font_6, $font_7, $font_8;
+    font-size: .88em;
+    font-weight: 400;
+}
+
+.serif {
+    font-family: $font_9, $font_10, $font_11;
+    font-size: 1.21em;
+    font-weight: 800;
+}
+
+.red {
+    color: $sunset_orange;
+}
+
+.green {
+    color: $emerald;
+}
+
+.grey {
+    color: $gray;
+}
+
+.small {
+    font-size: 75%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+#boardList li {
+    line-height: 1.2em;
+}
