@@ -1,0 +1,54 @@
+{
+    "Title": "",
+    "Game": "",
+    "AuthorName": "",
+    "AuthorMail": "",
+    "UpdateUrl": "",
+
+    "Cards": [{
+            "Text": "Card 1",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 2",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 3",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 4",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 5",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 6",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 7",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 8",
+            "Tags": "",
+            "Category": ""
+        },
+        {
+            "Text": "Card 9",
+            "Tags": "",
+            "Category": ""
+        }
+    ]
+}

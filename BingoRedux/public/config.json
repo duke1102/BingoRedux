@@ -1,0 +1,18 @@
+{
+    "Title": "Bingo Title ",
+    "Subtitle": "Classy subtitle",
+    "Game": "",
+    "AuthorName": "",
+    "AuthorMail": "",
+    "AuthorWebsite": "",
+    "Version": "0.0.1",
+    "CardsUrls": [{
+            "Name": "Primary",
+            "Url": "./data/bingocards.json"
+        },
+        {
+            "Name": "Fallback",
+            "Url": ""
+        }
+    ]
+}
