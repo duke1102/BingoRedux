@@ -66,30 +66,21 @@ import axios from 'axios';
 
 @Component
 export default class BingoGrid extends Vue {
-  bingoRows: Array<String> = [];
-  n: number;
+  bingoRows: String[] = [];
   data () {
     return {
       bingoRows: [
-      ],
-      n: 0
+      ]
     }
   }
 
 
-  @Watch('n')
-  onPropertyChanged(value: string, oldValue: string) {
-    console.log('new value');
-    console.log(value);
-    console.log('old value');
-    console.log(oldValue);
-  }
   mounted () {
-    axios.get('./data/bingocards.json').then(response => {
-      let cards: Array<Object> = response.data.Cards;
-      let pCard: any = null;
-      let rngList: Array<number> = [];
-      let rngPick: number = null;
+    axios.get('./data/bingocards.json').then((response) => {
+      let cards: Object[] = response.data.Cards;
+      let pCard: any;
+      let rngList: number[] = [];
+      let rngPick: number;
 
       for (let j = 0; j < 25; j++) {
         var temp = Math.floor(Math.random() * cards.length);
