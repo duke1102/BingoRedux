@@ -1,5 +1,5 @@
 <template>
-  <section name="bingogrid">
+  <section name="bingogrid" id="bingoPage">
       <table class="table" id="bingo">
         <tbody>
           <tr>

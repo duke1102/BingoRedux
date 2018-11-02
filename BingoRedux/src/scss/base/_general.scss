@@ -199,7 +199,7 @@ th {
     }
 
     #bingo {
-        margin-top: 16px;
+        // margin-top: 16px;
 
         .rowcol {
             background: $blue_charcoal;
@@ -225,6 +225,7 @@ th {
                 text-align: center;
                 width: 95px;
                 max-width: 95px;
+                vertical-align: middle;
 
                 &:first-child {
                     background: $blue_charcoal;
@@ -323,10 +324,4 @@ th {
     text-align: center;
 }
 
-.container {
-    margin: 0 auto;
-    overflow: auto;
-    padding: 8px 0 16px 16px;
-    width: 976px;
-}
 

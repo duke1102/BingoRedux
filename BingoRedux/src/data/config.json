@@ -1,11 +1,13 @@
 {
-    "Title": "Bingo Title ",
+    "Title": "What the",
     "Subtitle": "Classy subtitle",
     "Game": "",
     "AuthorName": "",
     "AuthorMail": "",
     "AuthorWebsite": "",
     "Version": "0.0.1",
+    "AboutSectionText": "Lorem Ipsum...",
+    "LinkSectionText": "Lorem aa",
     "CardsUrls": [{
             "Name": "Primary",
             "Url": "./data/bingocards.json"
